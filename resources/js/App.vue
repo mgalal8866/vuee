@@ -1,7 +1,7 @@
 
 <template>
- <v-app id="inspire">
-            <v-navigation-drawer v-model="drawer" app >
+ <v-app>
+            <!-- <v-navigation-drawer v-model="drawer" app >
                 <v-list>
                     <v-list-item v-for="(item,i ) in items" :key="i"  :to="item.link" >
                         <v-list-item-icon>
@@ -17,7 +17,7 @@
             <v-app-bar app>
                 <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
                 <v-toolbar-title>Application</v-toolbar-title>
-            </v-app-bar>
+            </v-app-bar> -->
 
             <v-main>
                 <router-view></router-view>
@@ -26,8 +26,10 @@
 </template>
 
 <script>
+
      export default {
      name: 'app',
+
     data: () =>  {
       return {
          drawer: null ,
