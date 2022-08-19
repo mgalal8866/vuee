@@ -40,6 +40,7 @@
 export default {
   data: () => ({
       bpm: 1,
+    //   https://www.elmasriastore.com/product/offer
     packs: [
       { img: "images/p1.png", title: "Medium Box", subtitle: "Tomato, Cabbage, Oil, Cauliflower", price: "$55" },
       { img: "images/p2.png", title: "Big Pack", subtitle: "Tomato, Cabbage, Oil, Cauliflower", price: "$55" },
@@ -49,6 +50,9 @@ export default {
       { img: "images/p6.png", title: "Medium Box", subtitle: "Tomato, Cabbage, Oil,Cauliflower", price: "$55" },
     ],
   }),
+  mounted:{
+    this.$store.dispatch('getproducts')
+  },
    methods: {
       decrement () {
         this.bpm--
