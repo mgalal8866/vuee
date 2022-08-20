@@ -11,6 +11,14 @@ export const SET_PRODUCTS = (state, products) => {
     console.log(state.products);
 
 }
+export const SET_PRODUCTSBYCAT = (state, products) => {
+    state.products = products;
+
+}
+export const SET_pagination = (state, pagination) => {
+    state.pagination = pagination;
+
+}
 
 export const SET_OFFERS = (state, offers) => {
     state.offers = offers;

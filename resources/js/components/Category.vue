@@ -12,7 +12,7 @@
                                     <v-list-item three-line class="text-center">
                                         <v-list-item-content>
                                             <div align="center" justify="center">
-                                                <v-img :src="cetegory.image" max-height="100" max-width="100" contain>
+                                                <v-img :src="cetegory.image" max-height="80" max-width="80" contain>
                                                 </v-img>
                                             </div>
                                             <v-list-item-subtitle :class="active ? 'green--text' : 'black--text'"
@@ -34,7 +34,7 @@ export default {
 
     methods: {
         getid: function (message) {
-            console.log(message)
+              this.$store.dispatch('getProductsbycategory',message)
         }
     },
     mounted() {
@@ -46,11 +46,6 @@ export default {
   data: () => ({
     // categories: [
     //   { img: "images/01.png", title: "Meat & Fish" },
-    //   { img: "images/02.png", title: "Vegetables" },
-    //   { img: "images/3.png", title: "Medicine" },
-    //   { img: "images/4.png", title: "Baby" },
-    //   { img: "images/5.png", title: "Office" },
-    //   { img: "images/6.png", title: "Beauty" },
     // ],
   }),
 };

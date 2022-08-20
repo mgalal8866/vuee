@@ -3,4 +3,5 @@ export default {
     categorys: [],
     offers: [],
     product: null,
+    pagination:[]
 }
